@@ -1,0 +1,12 @@
+{
+  "name": "app-venda",
+  "displayName": "app-venda",
+  "expo": {
+    "name": "app-venda",
+    "slug": "app-venda",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
