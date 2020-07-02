@@ -5,7 +5,11 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createStackNavigator } from "@react-navigation/stack";
 import Icon from "react-native-vector-icons/Feather";
 
-import Home from '../pages/home';
+import { cores } from "../utils/cores";
+
+import Home from "../pages/home";
+import ResultadoBusca from "../view/resultado-busca";
+import Login from '../view/Login';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -40,9 +44,26 @@ export default function Routes() {
   return (
     <Stack.Navigator>
       <Stack.Screen
+        name="RouteLogin"
+        component={Login}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
         name="RouteHome"
         component={Tabs}
         options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="ResultadoBusca"
+        component={ResultadoBusca}
+        options={{
+          headerTintColor: cores.verde,
+          headerStyle: {
+            backgroundColor: cores.roxo_medio,
+          },
+          headerBackTitleVisible: false,
+          headerTitle: "Resultado(s) da busca",
+        }}
       />
     </Stack.Navigator>
   );

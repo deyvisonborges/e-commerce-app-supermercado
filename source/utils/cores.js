@@ -1,7 +1,21 @@
 export const cores = {
-  azul_independence: '#38405f',
-  cinza_roman: '#8B939C',
-  preto_rich: '#12161F',
-  vermelho_imperial: '#FF0035',
-  roxo_independence: '#59546c',
-}
+  amarelo: "#fdc900",
+  azul: "#1167be",
+  branco: "#ffffff",
+  branco_neve: "#f7f9fc",
+  cinza_claro: "#f9fff1",
+  laranja: '#fdc502',
+  lilas: "#6574cf",
+  roxo_claro: '#8a96db',
+  roxo_medio: '#6574cf',
+  preto_rich: "#12161F",
+  preto_azulado: '#212630',
+  shadow: '#b1b1b10f',
+  verde: "#1d9900",
+  verde_neve: '#edfbf3',
+  verde_claro: '#29c761',
+  verde_escuro: '#669e4f',
+  vermelho_claro: '#fb4858',
+  vermelho: '#f81c0a',
+  vermelho_opaco: '#b22b32'
+};
