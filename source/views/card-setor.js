@@ -49,11 +49,7 @@ export default function CardSetor() {
             elevation: 12,
           }}
         >
-          <TouchableOpacity
-            onPress={() => {
-              navigation.navigate("ResultadoSelecaoSetor", { setor: 'Enlatados'});
-            }}
-          >
+          <TouchableOpacity>
             <Image
               source={require("../assets/icone-enlatados.png")}
               style={{
@@ -177,7 +173,11 @@ export default function CardSetor() {
             elevation: 12,
           }}
         >
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate("ResultadoSelecaoSetor", { setor: 'Enlatados'});
+            }}
+          >
             <Image
               source={require("../assets/icone-carne.png")}
               style={{
