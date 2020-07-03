@@ -2,8 +2,10 @@ import React from "react";
 import { View, Text, Image } from "react-native";
 import { cores } from "../utils/cores";
 import { TouchableOpacity } from "react-native-gesture-handler";
+import { useNavigatoin, useNavigation } from "@react-navigation/native";
 
 export default function CardSetor() {
+  const navigation = useNavigation();
   return (
     <>
       <Text
@@ -47,7 +49,11 @@ export default function CardSetor() {
             elevation: 12,
           }}
         >
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate("ResultadoSelecaoSetor", { setor: 'Enlatados'});
+            }}
+          >
             <Image
               source={require("../assets/icone-enlatados.png")}
               style={{
