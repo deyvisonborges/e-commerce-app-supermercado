@@ -175,7 +175,7 @@ export default function CardSetor() {
         >
           <TouchableOpacity
             onPress={() => {
-              navigation.navigate("ResultadoSelecaoSetor", { setor: 'Enlatados'});
+              navigation.navigate("ResultadoSelecaoSetor", { setor: 'Carnes'});
             }}
           >
             <Image
