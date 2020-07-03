@@ -3,10 +3,11 @@ import Icon from "react-native-vector-icons/Feather";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { useNavigation } from "@react-navigation/native";
 import { cores } from "../../utils/cores";
-
+import { ScrollView } from "react-native";
 
 import HomeHeader from "../../components/header";
-import HomeBannerPromocoes from '../../view/banners-promocoes';
+import HomeBannerPromocoes from "../../views/banners-promocoes";
+import CardSetor from "../../views/card-setor";
 
 import {
   ButtonBusca,
@@ -23,7 +24,7 @@ import {
 export default function home() {
   const navigation = useNavigation();
   return (
-    <>
+    <ScrollView>
       <HomeHeader>
         <UserContainer>
           <UserImageInfo>
@@ -53,8 +54,9 @@ export default function home() {
       <HomeContainer>
         <HomeContent>
           <HomeBannerPromocoes />
+          <CardSetor />
         </HomeContent>
       </HomeContainer>
-    </>
+    </ScrollView>
   );
 }

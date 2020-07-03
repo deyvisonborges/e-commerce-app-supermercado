@@ -3,7 +3,7 @@ import { cores } from "../../utils/cores";
 
 export const HomeContainer = styled.View`
   flex: 1;
-  background-color: ${cores.cinza_claro};
+  background-color: ${cores.branco_neve};
   height: auto;
   width: 100%;
 `;
@@ -11,13 +11,12 @@ export const HomeContainer = styled.View`
 export const HomeContent = styled.View`
   align-items: center;
   flex-direction: column;
-  justify-content: space-between;
-  width: auto;
+  /* background-color: ${cores.lilas}; */
+  width: 100%;
 `;
 
 export const UserContainer = styled.View`
   align-items: center;
-  /* background-color: ${cores.azul}; */
   border: 1px solid ${cores.laranja};
   border-radius: 12px;
   flex-direction: row;
@@ -48,7 +47,7 @@ export const HeaderUserNameTitulo = styled.Text`
 export const ContainerBusca = styled.View`
   padding: 10px 0 0 0;
   flex-direction: row;
-  width: 100%;
+  flex: 1;
 `;
 
 export const ButtonBusca = styled.TouchableOpacity`

@@ -3,7 +3,7 @@ import styled from "styled-components/native";
 import { cores } from "../../utils/cores";
 
 const Background = styled.View`
-  background-color: #0b8a6a;
+  background-color: ${cores.verde_abacate};
   padding: 20px 30px;
 `;
 

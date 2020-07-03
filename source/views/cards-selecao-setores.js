@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components/native';
 
-const Container = styled.ScrollView`
-  flex: 1;
+const Container = styled.View`
+  flex-direction: row;
+  align-items:  center;
+  width: 100%;
 `;
 
 export default function CardsSetores() {

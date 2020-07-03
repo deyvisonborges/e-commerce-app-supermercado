@@ -8,8 +8,7 @@ import Icon from "react-native-vector-icons/Feather";
 import { cores } from "../utils/cores";
 
 import Home from "../pages/home";
-import ResultadoBusca from "../view/resultado-busca";
-import Login from '../view/Login';
+import ResultadoBusca from "../screens/resultado-busca";
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -35,7 +34,7 @@ const Tabs = () => {
         inactiveTintColor: "#ff0000",
       }}
     >
-      <Tab.Screen name="home" component={Home} />
+      <Tab.Screen name="home" component={ResultadoBusca} />
     </Tab.Navigator>
   );
 };
@@ -44,12 +43,12 @@ export default function Routes() {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="RouteLogin"
-        component={Login}
+        name="RouteHome"
+        component={Home}
         options={{ headerShown: false }}
       />
       <Stack.Screen
-        name="RouteHome"
+        name="RouteTabs"
         component={Tabs}
         options={{ headerShown: false }}
       />

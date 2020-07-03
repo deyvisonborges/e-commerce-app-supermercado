@@ -5,12 +5,12 @@ import { FlatList } from 'react-native';
 import BannerPromocao from './banner-promocao';
 
 const Container = styled.ScrollView`
-  width: 100%;
-  height: 100%;
+  flex: 1;
+  padding: 10px;
 `;
 
 const DescricaoBanner = styled.Text`
-  margin: 15px 10px;
+  margin: 10px 0 0 20px;
   flex-direction: row;
   align-self: flex-start;
   font-size: 18px;
@@ -32,7 +32,7 @@ export default function BannerPromocoes() {
       <DescricaoBanner>
         Ofertas
       </DescricaoBanner>
-      <Container horizontal={true}>
+      <Container horizontal={true} showsHorizontalScrollIndicator={false}>
         <BannerPromocao data={banner} />
       </Container>
     </>

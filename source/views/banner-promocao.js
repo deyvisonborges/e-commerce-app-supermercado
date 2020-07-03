@@ -7,7 +7,6 @@ const Banner = styled.Image`
   width: 350px;
   height: 160px;
   border-radius: 12px;
-  border: 2px solid ${cores.shadow};
   margin: 0 5px 0 10px;
   
 `;
