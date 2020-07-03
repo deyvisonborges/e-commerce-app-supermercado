@@ -92,7 +92,7 @@ export default function CardSetor() {
                 height: 50,
               }}
             />
-            <Text style={{ color: cores.preto_azulado }}>Frios</Text>
+            <Text style={{ color: cores.preto_azulado }}>Peixaria</Text>
           </TouchableOpacity>
         </View>
         <View
