@@ -1,9 +1,9 @@
 <h1 align="center">
-    React Native RocketShoes
+    E-commerce App com React native
 </h1>
 
 <h4 align="center">
-  Aplicativo para supermercados utilizando React Native.
+  Aplicativo e-commerce para supermercados utilizando React Native.
 </h4>
 
 <p align="center">
