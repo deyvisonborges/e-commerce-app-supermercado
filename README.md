@@ -31,12 +31,6 @@ Esse projeto até o momento, está sendo desenvolvido as tecnologias:
 ## :information_source: Como usar
 
 ```bash
-# Clone esse repositório
-$ git clone https://github.com/lukemorales/rocketshoes-react-native rocketshoesRN
-
-# Acesse esse repositório com seu editor preferido
-$ cd rocketshoes-react-native
-
 # Instale as dependências
 $ yarn install
 
