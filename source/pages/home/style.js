@@ -11,7 +11,6 @@ export const HomeContainer = styled.View`
 export const HomeContent = styled.View`
   align-items: center;
   flex-direction: column;
-  /* background-color: ${cores.lilas}; */
   width: 100%;
 `;
 

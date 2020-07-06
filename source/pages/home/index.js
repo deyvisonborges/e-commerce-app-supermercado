@@ -21,7 +21,7 @@ import {
   UserImageInfo,
 } from "./style";
 
-export default function home() {
+export default function Home() {
   const navigation = useNavigation();
   return (
     <ScrollView>

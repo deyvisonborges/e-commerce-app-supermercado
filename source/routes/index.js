@@ -54,21 +54,10 @@ export default function Routes() {
         options={{ headerShown: false }}
       />
       <Stack.Screen
-        name="ResultadoBusca"
-        component={ResultadoBusca}
-        options={{
-          headerTintColor: cores.verde,
-          headerStyle: {
-            backgroundColor: cores.roxo_medio,
-          },
-          headerBackTitleVisible: false,
-          headerTitle: "Resultado(s) da busca",
-        }}
-      />
-      <Stack.Screen
         name="ResultadoSelecaoSetor"
         component={ResultadoSelecaoSetor}
         options={{
+          headerShown: false,
           headerTintColor: cores.amarelo,
           headerStyle: {
             backgroundColor: cores.verde_abacate,

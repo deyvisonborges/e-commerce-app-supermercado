@@ -62,7 +62,6 @@ export const ProdutoTag = styled.Text`
   width: 90px;
 `;
 
-// container dos botoes de quantidade e adicionar ao carrinho
 export const ProdutoEventosDescricao = styled.View`
   width: 100%;
   align-items: center;
@@ -81,7 +80,6 @@ export const BotaoAdicionarCarrinhoContainer = styled.TouchableOpacity`
   width: 100%;
 `;
 
-// adicionar ao carrinho
 export const BotaoAdicionarCarrinhoTexto = styled.Text`
   color: ${cores.branco_neve};
   font-size: 14px;
@@ -89,25 +87,51 @@ export const BotaoAdicionarCarrinhoTexto = styled.Text`
   width: auto;
 `;
 
-// seletor de quantidade
 export const BotaoQuantidadeContainer = styled.View`
   width: 100%;
   height: 50px;
   align-items: center;
+  justify-content: center;
   flex-direction: row;
-  justify-content: space-evenly;
   padding: 10px 0;
 `;
 
+export const ContainerButton = styled.View`
+  flex-direction: column;
+  margin: 0.5%;
+  width: 33.3%;
+`;
+
 export const BotaoDecremento = styled.TouchableOpacity`
+  align-items: center;
   background-color: ${cores.cinza};
-  padding: 20px;
+  border-radius: 100px;
+  height: 100%;
+  justify-content: center;
+  padding: 24px;
+  width: 100%;
 `;
+
 export const BotaoIncremento = styled.TouchableOpacity`
+  align-items: center;
   background-color: ${cores.cinza};
-  padding: 20px;
+  height: 100%;
+  justify-content: center;
+  padding: 24px;
+  width: 100%;
 `;
-export const QuantidadeContainer = styled.Text``;
+
+export const QuantidadeContainer = styled.Text`
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+`;
+
+export const ContainerImagemValor = styled.View`
+  flex-direction: column;
+`;
 
 export default function CardProduto() {
   return (
@@ -133,442 +157,34 @@ export default function CardProduto() {
           />
           <ProdutoDescricao>
             <ProdutoDetalhes>
-              <ProdutoTitulo>Alcatra Bovina 5Kg</ProdutoTitulo>
+              <ContainerImagemValor>
+                <ProdutoTitulo>Alcatra Bovina 5Kg</ProdutoTitulo>
+                <Text>R$ 20.99</Text>
+              </ContainerImagemValor>
               <ProdutoTag>Mais vendido</ProdutoTag>
             </ProdutoDetalhes>
-            <ProdutoEventosDescricao>
-              <BotaoQuantidadeContainer>
-                <BotaoDecremento>
-                  <Text>-</Text>
-                </BotaoDecremento>
-                <QuantidadeContainer editable maxLength={40} value={0}>
-                  0
-                </QuantidadeContainer>
-                <BotaoIncremento>
-                  <Text>+</Text>
-                </BotaoIncremento>
-              </BotaoQuantidadeContainer>
-              {/* <NumericInput
-              borderColor={cores.cinza}
-              value={0}
-              totalWidth={50}
-              totalHeight={50}
-              iconSize={12}
-              step={1}
-              valueType="real"
-              textColor={cores.verde_abacate}
-              iconStyle={{ color: cores.branco }}
-              rightButtonBackgroundColor={cores.amarelo}
-              leftButtonBackgroundColor={cores.amarelo}
-            /> */}
-              <BotaoAdicionarCarrinhoContainer>
-                <BotaoAdicionarCarrinhoTexto>
-                  Adidionar ao Carrinho
-                </BotaoAdicionarCarrinhoTexto>
-              </BotaoAdicionarCarrinhoContainer>
-            </ProdutoEventosDescricao>
-          </ProdutoDescricao>
-        </Card>
 
-        <Card
-          style={{
-            shadowColor: cores.preto_azulado,
-            shadowOffset: {
-              width: 0,
-              height: 6,
-            },
-            shadowOpacity: 0.37,
-            shadowRadius: 7.49,
-            elevation: 12,
-          }}
-        >
-          <ProdutoImagem
-            source={{
-              uri:
-                "https://imagensemoldes.com.br/wp-content/uploads/2020/06/Foto-de-Carne-PNG-1200x900.png",
-            }}
-          />
-          <ProdutoDescricao>
-            <ProdutoDetalhes>
-              <ProdutoTitulo>Alcatra Bovina 5Kg</ProdutoTitulo>
-              <ProdutoTag>Mais vendido</ProdutoTag>
-            </ProdutoDetalhes>
             <ProdutoEventosDescricao>
               <BotaoQuantidadeContainer>
-                <BotaoDecremento>
-                  <Text>-</Text>
-                </BotaoDecremento>
-                <QuantidadeContainer editable maxLength={40} value={0}>
-                  0
-                </QuantidadeContainer>
-                <BotaoIncremento>
-                  <Text>+</Text>
-                </BotaoIncremento>
-              </BotaoQuantidadeContainer>
-              <BotaoAdicionarCarrinhoContainer>
-                <BotaoAdicionarCarrinhoTexto>
-                  Adidionar ao Carrinho
-                </BotaoAdicionarCarrinhoTexto>
-              </BotaoAdicionarCarrinhoContainer>
-            </ProdutoEventosDescricao>
-          </ProdutoDescricao>
-        </Card>
+                <ContainerButton>
+                  <BotaoDecremento>
+                    <Text>-</Text>
+                  </BotaoDecremento>
+                </ContainerButton>
 
-        <Card
-          style={{
-            shadowColor: cores.preto_azulado,
-            shadowOffset: {
-              width: 0,
-              height: 6,
-            },
-            shadowOpacity: 0.37,
-            shadowRadius: 7.49,
-            elevation: 12,
-          }}
-        >
-          <ProdutoImagem
-            source={{
-              uri:
-                "https://imagensemoldes.com.br/wp-content/uploads/2020/06/Foto-de-Carne-PNG-1200x900.png",
-            }}
-          />
-          <ProdutoDescricao>
-            <ProdutoDetalhes>
-              <ProdutoTitulo>Alcatra Bovina 5Kg</ProdutoTitulo>
-              <ProdutoTag>Mais vendido</ProdutoTag>
-            </ProdutoDetalhes>
-            <ProdutoEventosDescricao>
-              <BotaoQuantidadeContainer>
-                <BotaoDecremento>
-                  <Text>-</Text>
-                </BotaoDecremento>
-                <QuantidadeContainer editable maxLength={40} value={0}>
-                  0
-                </QuantidadeContainer>
-                <BotaoIncremento>
-                  <Text>+</Text>
-                </BotaoIncremento>
-              </BotaoQuantidadeContainer>
-              <BotaoAdicionarCarrinhoContainer>
-                <BotaoAdicionarCarrinhoTexto>
-                  Adidionar ao Carrinho
-                </BotaoAdicionarCarrinhoTexto>
-              </BotaoAdicionarCarrinhoContainer>
-            </ProdutoEventosDescricao>
-          </ProdutoDescricao>
-        </Card>
+                <ContainerButton>
+                  <QuantidadeContainer editable maxLength={40} value={0}>
+                    0
+                  </QuantidadeContainer>
+                </ContainerButton>
 
-        <Card
-          style={{
-            shadowColor: cores.preto_azulado,
-            shadowOffset: {
-              width: 0,
-              height: 6,
-            },
-            shadowOpacity: 0.37,
-            shadowRadius: 7.49,
-            elevation: 12,
-          }}
-        >
-          <ProdutoImagem
-            source={{
-              uri:
-                "https://imagensemoldes.com.br/wp-content/uploads/2020/06/Foto-de-Carne-PNG-1200x900.png",
-            }}
-          />
-          <ProdutoDescricao>
-            <ProdutoDetalhes>
-              <ProdutoTitulo>Alcatra Bovina 5Kg</ProdutoTitulo>
-              <ProdutoTag>Mais vendido</ProdutoTag>
-            </ProdutoDetalhes>
-            <ProdutoEventosDescricao>
-              <BotaoQuantidadeContainer>
-                <BotaoDecremento>
-                  <Text>-</Text>
-                </BotaoDecremento>
-                <QuantidadeContainer editable maxLength={40} value={0}>
-                  0
-                </QuantidadeContainer>
-                <BotaoIncremento>
-                  <Text>+</Text>
-                </BotaoIncremento>
+                <ContainerButton>
+                  <BotaoIncremento>
+                    <Text>+</Text>
+                  </BotaoIncremento>
+                </ContainerButton>
               </BotaoQuantidadeContainer>
-              <BotaoAdicionarCarrinhoContainer>
-                <BotaoAdicionarCarrinhoTexto>
-                  Adidionar ao Carrinho
-                </BotaoAdicionarCarrinhoTexto>
-              </BotaoAdicionarCarrinhoContainer>
-            </ProdutoEventosDescricao>
-          </ProdutoDescricao>
-        </Card>
 
-        <Card
-          style={{
-            shadowColor: cores.preto_azulado,
-            shadowOffset: {
-              width: 0,
-              height: 6,
-            },
-            shadowOpacity: 0.37,
-            shadowRadius: 7.49,
-            elevation: 12,
-          }}
-        >
-          <ProdutoImagem
-            source={{
-              uri:
-                "https://imagensemoldes.com.br/wp-content/uploads/2020/06/Foto-de-Carne-PNG-1200x900.png",
-            }}
-          />
-          <ProdutoDescricao>
-            <ProdutoDetalhes>
-              <ProdutoTitulo>Alcatra Bovina 5Kg</ProdutoTitulo>
-              <ProdutoTag>Mais vendido</ProdutoTag>
-            </ProdutoDetalhes>
-            <ProdutoEventosDescricao>
-              <BotaoQuantidadeContainer>
-                <BotaoDecremento>
-                  <Text>-</Text>
-                </BotaoDecremento>
-                <QuantidadeContainer editable maxLength={40} value={0}>
-                  0
-                </QuantidadeContainer>
-                <BotaoIncremento>
-                  <Text>+</Text>
-                </BotaoIncremento>
-              </BotaoQuantidadeContainer>
-              <BotaoAdicionarCarrinhoContainer>
-                <BotaoAdicionarCarrinhoTexto>
-                  Adidionar ao Carrinho
-                </BotaoAdicionarCarrinhoTexto>
-              </BotaoAdicionarCarrinhoContainer>
-            </ProdutoEventosDescricao>
-          </ProdutoDescricao>
-        </Card>
-        <Card
-          style={{
-            shadowColor: cores.preto_azulado,
-            shadowOffset: {
-              width: 0,
-              height: 6,
-            },
-            shadowOpacity: 0.37,
-            shadowRadius: 7.49,
-            elevation: 12,
-          }}
-        >
-          <ProdutoImagem
-            source={{
-              uri:
-                "https://imagensemoldes.com.br/wp-content/uploads/2020/06/Foto-de-Carne-PNG-1200x900.png",
-            }}
-          />
-          <ProdutoDescricao>
-            <ProdutoDetalhes>
-              <ProdutoTitulo>Alcatra Bovina 5Kg</ProdutoTitulo>
-              <ProdutoTag>Mais vendido</ProdutoTag>
-            </ProdutoDetalhes>
-            <ProdutoEventosDescricao>
-              <BotaoQuantidadeContainer>
-                <BotaoDecremento>
-                  <Text>-</Text>
-                </BotaoDecremento>
-                <QuantidadeContainer editable maxLength={40} value={0}>
-                  0
-                </QuantidadeContainer>
-                <BotaoIncremento>
-                  <Text>+</Text>
-                </BotaoIncremento>
-              </BotaoQuantidadeContainer>
-              {/* <NumericInput
-              borderColor={cores.cinza}
-              value={0}
-              totalWidth={50}
-              totalHeight={50}
-              iconSize={12}
-              step={1}
-              valueType="real"
-              textColor={cores.verde_abacate}
-              iconStyle={{ color: cores.branco }}
-              rightButtonBackgroundColor={cores.amarelo}
-              leftButtonBackgroundColor={cores.amarelo}
-            /> */}
-              <BotaoAdicionarCarrinhoContainer>
-                <BotaoAdicionarCarrinhoTexto>
-                  Adidionar ao Carrinho
-                </BotaoAdicionarCarrinhoTexto>
-              </BotaoAdicionarCarrinhoContainer>
-            </ProdutoEventosDescricao>
-          </ProdutoDescricao>
-        </Card>
-
-        <Card
-          style={{
-            shadowColor: cores.preto_azulado,
-            shadowOffset: {
-              width: 0,
-              height: 6,
-            },
-            shadowOpacity: 0.37,
-            shadowRadius: 7.49,
-            elevation: 12,
-          }}
-        >
-          <ProdutoImagem
-            source={{
-              uri:
-                "https://imagensemoldes.com.br/wp-content/uploads/2020/06/Foto-de-Carne-PNG-1200x900.png",
-            }}
-          />
-          <ProdutoDescricao>
-            <ProdutoDetalhes>
-              <ProdutoTitulo>Alcatra Bovina 5Kg</ProdutoTitulo>
-              <ProdutoTag>Mais vendido</ProdutoTag>
-            </ProdutoDetalhes>
-            <ProdutoEventosDescricao>
-              <BotaoQuantidadeContainer>
-                <BotaoDecremento>
-                  <Text>-</Text>
-                </BotaoDecremento>
-                <QuantidadeContainer editable maxLength={40} value={0}>
-                  0
-                </QuantidadeContainer>
-                <BotaoIncremento>
-                  <Text>+</Text>
-                </BotaoIncremento>
-              </BotaoQuantidadeContainer>
-              <BotaoAdicionarCarrinhoContainer>
-                <BotaoAdicionarCarrinhoTexto>
-                  Adidionar ao Carrinho
-                </BotaoAdicionarCarrinhoTexto>
-              </BotaoAdicionarCarrinhoContainer>
-            </ProdutoEventosDescricao>
-          </ProdutoDescricao>
-        </Card>
-
-        <Card
-          style={{
-            shadowColor: cores.preto_azulado,
-            shadowOffset: {
-              width: 0,
-              height: 6,
-            },
-            shadowOpacity: 0.37,
-            shadowRadius: 7.49,
-            elevation: 12,
-          }}
-        >
-          <ProdutoImagem
-            source={{
-              uri:
-                "https://imagensemoldes.com.br/wp-content/uploads/2020/06/Foto-de-Carne-PNG-1200x900.png",
-            }}
-          />
-          <ProdutoDescricao>
-            <ProdutoDetalhes>
-              <ProdutoTitulo>Alcatra Bovina 5Kg</ProdutoTitulo>
-              <ProdutoTag>Mais vendido</ProdutoTag>
-            </ProdutoDetalhes>
-            <ProdutoEventosDescricao>
-              <BotaoQuantidadeContainer>
-                <BotaoDecremento>
-                  <Text>-</Text>
-                </BotaoDecremento>
-                <QuantidadeContainer editable maxLength={40} value={0}>
-                  0
-                </QuantidadeContainer>
-                <BotaoIncremento>
-                  <Text>+</Text>
-                </BotaoIncremento>
-              </BotaoQuantidadeContainer>
-              <BotaoAdicionarCarrinhoContainer>
-                <BotaoAdicionarCarrinhoTexto>
-                  Adidionar ao Carrinho
-                </BotaoAdicionarCarrinhoTexto>
-              </BotaoAdicionarCarrinhoContainer>
-            </ProdutoEventosDescricao>
-          </ProdutoDescricao>
-        </Card>
-
-        <Card
-          style={{
-            shadowColor: cores.preto_azulado,
-            shadowOffset: {
-              width: 0,
-              height: 6,
-            },
-            shadowOpacity: 0.37,
-            shadowRadius: 7.49,
-            elevation: 12,
-          }}
-        >
-          <ProdutoImagem
-            source={{
-              uri:
-                "https://imagensemoldes.com.br/wp-content/uploads/2020/06/Foto-de-Carne-PNG-1200x900.png",
-            }}
-          />
-          <ProdutoDescricao>
-            <ProdutoDetalhes>
-              <ProdutoTitulo>Alcatra Bovina 5Kg</ProdutoTitulo>
-              <ProdutoTag>Mais vendido</ProdutoTag>
-            </ProdutoDetalhes>
-            <ProdutoEventosDescricao>
-              <BotaoQuantidadeContainer>
-                <BotaoDecremento>
-                  <Text>-</Text>
-                </BotaoDecremento>
-                <QuantidadeContainer editable maxLength={40} value={0}>
-                  0
-                </QuantidadeContainer>
-                <BotaoIncremento>
-                  <Text>+</Text>
-                </BotaoIncremento>
-              </BotaoQuantidadeContainer>
-              <BotaoAdicionarCarrinhoContainer>
-                <BotaoAdicionarCarrinhoTexto>
-                  Adidionar ao Carrinho
-                </BotaoAdicionarCarrinhoTexto>
-              </BotaoAdicionarCarrinhoContainer>
-            </ProdutoEventosDescricao>
-          </ProdutoDescricao>
-        </Card>
-
-        <Card
-          style={{
-            shadowColor: cores.preto_azulado,
-            shadowOffset: {
-              width: 0,
-              height: 6,
-            },
-            shadowOpacity: 0.37,
-            shadowRadius: 7.49,
-            elevation: 12,
-          }}
-        >
-          <ProdutoImagem
-            source={{
-              uri:
-                "https://imagensemoldes.com.br/wp-content/uploads/2020/06/Foto-de-Carne-PNG-1200x900.png",
-            }}
-          />
-          <ProdutoDescricao>
-            <ProdutoDetalhes>
-              <ProdutoTitulo>Alcatra Bovina 5Kg</ProdutoTitulo>
-              <ProdutoTag>Mais vendido</ProdutoTag>
-            </ProdutoDetalhes>
-            <ProdutoEventosDescricao>
-              <BotaoQuantidadeContainer>
-                <BotaoDecremento>
-                  <Text>-</Text>
-                </BotaoDecremento>
-                <QuantidadeContainer editable maxLength={40} value={0}>
-                  0
-                </QuantidadeContainer>
-                <BotaoIncremento>
-                  <Text>+</Text>
-                </BotaoIncremento>
-              </BotaoQuantidadeContainer>
               <BotaoAdicionarCarrinhoContainer>
                 <BotaoAdicionarCarrinhoTexto>
                   Adidionar ao Carrinho
