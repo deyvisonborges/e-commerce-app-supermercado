@@ -7,7 +7,7 @@ import { ScrollView } from "react-native";
 
 import HomeHeader from "../../components/header";
 import ListaBannersOfertas from "../../mocks/lista-banners-ofertas-home";
-// import ListaCardsSetores from '../../mocks/lista-cards-setores';
+import ListaCardsSetores from '../../mocks/lista-cards-setores';
 
 import {
   ButtonBusca,
@@ -54,7 +54,7 @@ export default function PageHome() {
       <HomeContainer>
         <HomeContent>
           <ListaBannersOfertas />
-          {/* <ListaCardsSetores /> */}
+          <ListaCardsSetores />
         </HomeContent>
       </HomeContainer>
     </ScrollView>

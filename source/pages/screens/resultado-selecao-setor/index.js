@@ -5,7 +5,7 @@ import { useNavigation } from "@react-navigation/native";
 import Header from './header';
 import ListaProdutosSetor from '../../../mocks/lista-produtos-setor';
 
-export default function ResultadoBusca({ route }) {
+const ResultadoSelecaoSetor = ({ route }) => {
   const navigation = useNavigation();
   navigation.setOptions({
     title: `Setor de ${route.params.setor}`,
@@ -17,3 +17,5 @@ export default function ResultadoBusca({ route }) {
     </>
   );
 }
+
+export default ResultadoSelecaoSetor;
