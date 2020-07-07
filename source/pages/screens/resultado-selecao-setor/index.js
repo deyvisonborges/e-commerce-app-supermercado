@@ -2,8 +2,8 @@ import React from "react";
 import { View, Text } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
-import Header from '../navigation/navigation-header';
-import CardProduto from "../views/card-produto";
+import Header from './header';
+import ListaProdutosSetor from '../../../mocks/lista-produtos-setor';
 
 export default function ResultadoBusca({ route }) {
   const navigation = useNavigation();
@@ -12,8 +12,8 @@ export default function ResultadoBusca({ route }) {
   });
   return (
     <>
-      <Header cor='verde_abacate'></Header>
-      <CardProduto />
+      <Header />
+      <ListaProdutosSetor />
     </>
   );
 }

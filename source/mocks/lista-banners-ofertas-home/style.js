@@ -8,11 +8,9 @@ export const Titulo = styled.Text`
   font-size: 18px;
   font-weight: bold;
   color: ${cores.preto_azulado};
-  border: solid 1px red;
 `;
 
 export const Container = styled.ScrollView`
-  flex: 1;
-  padding: 10px;
-  border: solid 1px red;
+  width: 100%;
+  margin: 10px 20px;
 `;

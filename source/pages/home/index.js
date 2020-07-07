@@ -6,8 +6,8 @@ import { cores } from "../../utils/cores";
 import { ScrollView } from "react-native";
 
 import HomeHeader from "../../components/header";
-import HomeBannerPromocoes from "../../views/banners-promocoes";
-import CardSetor from "../../views/card-setor";
+import ListaBannersOfertas from "../../mocks/lista-banners-ofertas-home";
+// import ListaCardsSetores from '../../mocks/lista-cards-setores';
 
 import {
   ButtonBusca,
@@ -21,7 +21,7 @@ import {
   UserImageInfo,
 } from "./style";
 
-export default function Home() {
+export default function PageHome() {
   const navigation = useNavigation();
   return (
     <ScrollView>
@@ -53,8 +53,8 @@ export default function Home() {
       </HomeHeader>
       <HomeContainer>
         <HomeContent>
-          <HomeBannerPromocoes />
-          <CardSetor />
+          <ListaBannersOfertas />
+          {/* <ListaCardsSetores /> */}
         </HomeContent>
       </HomeContainer>
     </ScrollView>

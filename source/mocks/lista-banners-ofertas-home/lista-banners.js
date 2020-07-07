@@ -1,10 +1,12 @@
 import React from "react";
-import { TouchContainer, Banner } from "./style";
+import BannerOferta from '../../elements/banner-oferta-home';
 
-export default function BannerPromo({ data }) {
+const ListaBanners = ({
+  data
+}) => {
   return Object.keys(data).map((banner, key) => (
-    <TouchContainer key={key} >
-      <Banner source={{ uri: data[banner].url }} />
-    </TouchContainer>
+    <BannerOferta key={key} url={data[banner].url} />
   ));
 }
+
+export default ListaBanners;

@@ -6,12 +6,14 @@ export const HomeContainer = styled.View`
   background-color: ${cores.branco};
   height: auto;
   width: 100%;
+  height: 100%;
 `;
 
 export const HomeContent = styled.View`
   align-items: center;
   flex-direction: column;
   width: 100%;
+  height: 100%;
 `;
 
 export const UserContainer = styled.View`

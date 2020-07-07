@@ -1,9 +1,9 @@
 import styled from "styled-components/native";
-import { cores } from "../../utils/cores";
+import { cores } from "../../../../utils/cores";
 
 export const Background = styled.View`
   align-items: center;
-  background-color: ${(props) => cores[props.cor]};
+  background-color: ${cores.verde_abacate};
   height: 60px;
   justify-content: center;
   position: relative;

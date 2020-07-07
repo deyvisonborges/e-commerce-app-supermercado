@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Banners from './lista-banners/banner-promocao';
 import {
   Container,
   Titulo
 } from './style';
+import ListaBanners from './lista-banners';
 
 export default function BannerPromocoes() {
 
@@ -20,7 +20,7 @@ export default function BannerPromocoes() {
         Ofertas
       </Titulo>
       <Container horizontal={true} showsHorizontalScrollIndicator={false}>
-        <Banners data={banner} />
+        <ListaBanners data={banner} />
       </Container>
     </>
   );
