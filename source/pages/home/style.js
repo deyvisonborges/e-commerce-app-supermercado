@@ -3,7 +3,7 @@ import { cores } from "../../utils/cores";
 
 export const HomeContainer = styled.View`
   flex: 1;
-  background-color: ${cores.branco_neve};
+  background-color: ${cores.branco};
   height: auto;
   width: 100%;
 `;
@@ -51,7 +51,6 @@ export const ContainerBusca = styled.View`
 
 export const ButtonBusca = styled.TouchableOpacity`
   background-color: ${cores.laranja};
-  border: 1px solid ${cores.shadow};
   border-radius: 12px;
   margin: 17px;
   padding: 10px;
@@ -67,9 +66,9 @@ export const UserImageInfo = styled.View`
 
 export const HeaderInput = styled.TextInput.attrs({
   placeholderTextColor: cores.preto_azulado,
+  textDecoration: 'none'
 })`
-  background-color: ${cores.branco_neve};
-  border: 1px solid ${cores.shadow};
+  background-color: ${cores.branco};
   border-radius: 12px;
   color: ${cores.vermelho_claro};
   font-size: 16px;

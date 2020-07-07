@@ -1,22 +1,9 @@
 import React, { useState } from "react";
-import styled from "styled-components/native";
-import { cores } from "../utils/cores";
-import { FlatList } from 'react-native';
-import BannerPromocao from './banner-promocao';
-
-const Container = styled.ScrollView`
-  flex: 1;
-  padding: 10px;
-`;
-
-const DescricaoBanner = styled.Text`
-  margin: 10px 0 0 20px;
-  flex-direction: row;
-  align-self: flex-start;
-  font-size: 18px;
-  font-weight: bold;
-  color: ${cores.preto_azulado};
-`;
+import Banners from './lista-banners/banner-promocao';
+import {
+  Container,
+  Titulo
+} from './style';
 
 export default function BannerPromocoes() {
 
@@ -29,11 +16,11 @@ export default function BannerPromocoes() {
 
   return (
     <>
-      <DescricaoBanner>
+      <Titulo>
         Ofertas
-      </DescricaoBanner>
+      </Titulo>
       <Container horizontal={true} showsHorizontalScrollIndicator={false}>
-        <BannerPromocao data={banner} />
+        <Banners data={banner} />
       </Container>
     </>
   );

@@ -9,7 +9,7 @@ import { cores } from "../utils/cores";
 
 import Home from "../pages/home";
 import ResultadoBusca from "../screens/resultado-busca";
-import ResultadoSelecaoSetor from '../screens/resultado-selecao-setor';
+import ResultadoSelecaoSetor from '../pages/screen-resultado-selecao-setor';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();

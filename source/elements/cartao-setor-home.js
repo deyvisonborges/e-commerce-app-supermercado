@@ -37,7 +37,7 @@ export default function CardSetor() {
             width: 100,
             height: 100,
             borderRadius: 12,
-            backgroundColor: cores.cinza,
+            backgroundColor: cores.branco,
             margin: 10,
             shadowColor: cores.preto_azulado,
             shadowOffset: {
@@ -68,7 +68,7 @@ export default function CardSetor() {
             width: 100,
             height: 100,
             borderRadius: 12,
-            backgroundColor: cores.cinza,
+            backgroundColor: cores.verde,
             margin: 10,
             shadowColor: cores.preto_azulado,
             shadowOffset: {
